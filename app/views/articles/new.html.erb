@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-lg navbar-light p-3 bg-light d-flex justify-content-between" >
+    <%= link_to "Wikinimous", articles_path %>
+    <%= link_to "New article", new_article_path %>
+</nav>
+
+<div class="list-container">
+
+  <h1> New article</h1>
+
+  <%= render 'form', article: @article%>
+
+  <%=link_to "Back", articles_path%>
+
+</div>
